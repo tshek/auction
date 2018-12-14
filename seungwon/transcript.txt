@@ -1,0 +1,5 @@
+========================
+Welcome to Auction House
+========================
+
+What item would you like?
