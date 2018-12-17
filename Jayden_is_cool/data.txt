@@ -1,1 +1,2 @@
-hello world
+items = {item_num:[bids=int,desc=str,reserve=float,curr_bid=float,buyer=str}
+buyers = {buyer={item_num:price=float,...}}
