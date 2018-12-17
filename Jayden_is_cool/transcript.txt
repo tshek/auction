@@ -1,1 +1,27 @@
-hello world
+Welcome to the Kool Kids Auction house!
+Your buyer number is (buyer_num)
+Enter your buyer number whenever you bid on an item.
+-----------------------------------
+Item 1 + description + current_bid
+Item 2 + desctiption + current_bid
+...
+
+Enter your buyer number:
+Enter the item number of the item you would like to bid on:
+How much would you like to bid on this item?
+Your bid is less than the current bid, please enter a new bid or exit.
+or
+Thank you very much for your bid, have a nice day!
+
+-----------------------------------
+
+Check items that have reached reserve value --> SOLD!
+>Price + 10% auction fee
+
+Items that have not been sold
+Item 3 + final_bid
+Item 4 + no_bid
+
+No. Items sold:
+No. Items nnot sold:
+No. Items with no bids:
