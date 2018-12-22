@@ -1,0 +1,31 @@
+Data - what do I need to store?
+
+-Array for buyers; start with buyers = []
+
+-10 items (pre-prepared) with:
+   -item number (id)
+   -number of bids
+   -description
+   -reserve fee
+
+-Set bid_num to 0 (number of bids)
+
+-Also store variable named buyer_number (done when asked for id number)
+   -Store buyer's bid into a variable named highest_bid
+   -Store buyer number + bid into a list / dictionary (?)
+
+-At the end:
+   -total fee
+-For items that have not reached reserve price:
+   -item numbers
+   -final bids
+-For items that have no bids:
+   -item numbers
+-For items sold:
+   -display sold_num (variable containing number of items sold)
+-Then:
+   -show items that have not reached reserve price
+-Finally display:
+   -how many sold
+   -how many didn't reach reserve price
+   -how many items have no bids
