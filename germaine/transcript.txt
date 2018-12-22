@@ -1,0 +1,31 @@
+Welcome to auctions.com! Here are our items today:
+
+item number     description     number of bids     reserve price($)
+    1             shelf                0                75.00
+    2             table                0                39.00
+    3             lamp                 0                40.00
+    4            dishes(4)             0                25.00
+    5             pram                 0                25.00
+    6            tea set               0                26.00
+    7            ink set               0                30.00
+    8          writing desk            0                50.00
+    9           glass case             0               150.00
+   10         stone phoenix            0               250.00
+   
+Pick an item to bid for: 3
+3: Lamp
+Highest bid: 0
+   
+Enter your id number: 10023
+   
+Enter your bid: 20
+Okay, reserve not met
+
+Bid again? (y/n) n
+
+Total fee: 0
+Item 3 (highest bid 20) has not reached its reserve price
+Items with no bids: [1, 2, 4, 5, 6, 7, 8, 9, 10]
+Sold: 0
+Reserve not met: 1
+No bids: 9
