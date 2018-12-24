@@ -1,36 +1,3 @@
-items = [
-  # [item_number, description, reserve_price,
-  #   [ [bid, buyer], 
-  #     [bid, buyer], 
-  #     [bid, buyer] 
-  #   ] 
-  # ]
-    
-  [ 101, "Chest of drawers", 199.99, 
-    [
-        [0, None]
-    ]
-  ],
-    
-  [ 102, "Cuddly toy", 5.00, 
-    [
-        [0, None]   
-    ] 
-  ],
-    
-  [ 103, "Armchair", 25.00, 
-    [
-        [0, None] 
-    ]
-  ],
-    
-  [ 104, "Hair brush used by pop celebrity Ed Sheeran", 20.00,
-    [
-      [0, None]
-    ]
-  ]
-]
-
 '''
 
 # Task 2 – Buyer bids.
@@ -172,6 +139,49 @@ items = [
 
 
 '''
+items = [
+  # [item_number, description, reserve_price,
+  #   [ [bid, buyer], 
+  #     [bid, buyer], 
+  #     [bid, buyer] 
+  #   ] 
+  # ]
+    
+  [ 101, "Chest of drawers", 199.99, 
+    [
+        [0, None]
+    ]
+  ],
+    
+  [ 102, "Cuddly toy", 5.00, 
+    [
+        [0, None]   
+    ] 
+  ],
+    
+  [ 103, "Armchair", 25.00, 
+    [
+        [0, None] 
+    ]
+  ],
+    
+  [ 104, "Hair brush used by pop celebrity Ed Sheeran", 20.00,
+    [
+      [0, None]
+    ]
+  ]
+]
+
+
+LOT = 0
+DESC = 1
+RESERVE = 2
+BIDS = 3
+BID = 0
+BUYER = 1
+LAST = -1
+
+
 def banner (text, ornament="="):
   above = below = ornament * len(text)
   return f"{above}\n{text}\n{below}"
@@ -185,4 +195,24 @@ def display_catalog():
   print ("\n".join(texts))
     
 
-display_catalog()
+def get_bid():
+  amount = 5
+  buyer_id = 111111
+  items[0][BIDS].append([amount, buyer_id])
+
+
+def make_bid(lot, amount, bidder_id):
+  for i, item in enumerate(items):
+    if item[LOT] == lot:
+      if amount > item[BIDS][LAST][BID]:
+          items[i][BIDS].append([amount, bidder_id])
+      return True
+
+  return False
+
+
+display_catalog ()
+
+make_bid (101, 5, 111111)
+assert items[0][BIDS][-1][BID] == 5
+print (items)
