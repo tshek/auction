@@ -186,7 +186,7 @@ def banner (text, ornament="="):
   above = below = ornament * len(text)
   return f"{above}\n{text}\n{below}"
 
-def display_catalog():
+def display_lots():
   print (banner ("Items for sale") )
   texts = []
   for item in items:
@@ -194,12 +194,34 @@ def display_catalog():
     texts.append (f"Lot {lot}: {desc}. Highest bid: ${bids[-1][0]}")
   print ("\n".join(texts))
     
+def do_nothing(val):
+    return val
 
-def get_bid():
+def ask(prompt=">", answer="", fn=do_nothing(), choices=[]):
+  # passthru test answers
+  acceptable = False if answer == "" else True
+
+  while not acceptable:
+choices or answer in choices 
+
+    try:
+      answer = input(prompt)
+
+      for i, item in enumerate( items ):
+        if item[LOT] == lot:
+          return i
+    except:
+      print ("Lot not recognised.")
+
+       """ 
   amount = 5
   buyer_id = 111111
   items[0][BIDS].append([amount, buyer_id])
+  """
 
+def get_bid(lot="", amount="", buyer_id=""):
+  display_lots()
+  ask("Select a lot to bid on", int())
 
 def make_bid(lot, amount, bidder_id):
   for i, item in enumerate(items):
@@ -211,7 +233,7 @@ def make_bid(lot, amount, bidder_id):
   return False
 
 
-display_catalog ()
+display_lots ()
 
 make_bid (101, 5, 111111)
 assert items[0][BIDS][-1][BID] == 5
