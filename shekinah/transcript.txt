@@ -1,0 +1,62 @@
+Hello There! Welcome! This is the Auction Company.
+
+This is your id number: 2385
+
+Here are the items for auction:
+
+Item Number                   Description                 Reserve Price         No. of Bids
+1                       canvas lawn chairs                   $60                      0
+
+2                       body weight scale                    $25                      0
+                                                         
+3                       colourful metal utensils             $20                      0
+
+4                       purple light bulb                    $10                      0
+
+5                       White wooden rocking chair           $110                     0
+
+6                       Long dressing mirror                 $100                     0
+
+7                       five thin paint brushes              $8                       0
+
+8                       game BINGO - family pack             $20                      0
+
+9                       HP colour printer -L360              $130                     0
+
+10                      red two person bicycle               $400                     0
+
+
+Enter an item to bid: 10
+Description of no. 10: red two person bicycle
+Current Highest bid: 0 
+
+Enter id number: 2385
+
+Enter your bid ($) (must be higher than previous highest bid): 400
+Current Highest bid: 400
+
+Number of bids for item 10: 1
+
+Bid again? (y/n):n
+
+Items reached reserved price: 10
+
+No bid items: 1, 2, 3, 4, 5, 6, 7, 8, 9
+No. of none bid items: 9
+
+Total items sold: 1
+Items sold: 10
+Reserved Price not met: none
+
+Receipt:
+Items bought: 1
+Description: red two person bicycle
+Sold at ($): 400
+Company fee: 10%
+400 + 10%
+
+Total fee ($): 440
+
+Payed
+
+Bid complete. Come back soon!
