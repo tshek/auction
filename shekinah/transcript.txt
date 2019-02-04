@@ -1,6 +1,6 @@
 Hello There! Welcome! This is the Auction Company.
 
-This is your id number: 2385
+This is your buyer id number: 2385
 
 Here are the items for auction:
 
