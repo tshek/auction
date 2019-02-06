@@ -3,8 +3,10 @@ Data Structures
 
 # of buyers for certain item, their number--> buyers = [], array storing  
 
-in auction at least 10 items with their:
-  item_num
+DON'T FORGET to print out ("Hello There! Welcome! This is the Auction Company.")
+
+in auction AT LEAST 10 items with their:
+  item_num = list, dict
   describe = (" ")
   reserve_price = int
   
@@ -20,12 +22,9 @@ make all variables shorter names
 item_num of which item buyer wants to bid on
 Ask buyer for id number store then store bid put into the current_highest_bid 
 
+print out:
 total_fee
 sold_items
 items reaching reserve_price
 
 print out company_fee (10%)
-
-
-
-  
