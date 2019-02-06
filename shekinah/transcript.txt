@@ -1,6 +1,6 @@
 Hello There! Welcome! This is the Auction Company.
 
-This is your id number: 2385
+This is your buyer id number: 2385
 
 Here are the items for auction:
 
@@ -26,23 +26,23 @@ Item Number                   Description                 Reserve Price         
 10                      red two person bicycle               $400                     0
 
 
+Enter your buyer id number: 2385
+
+Items with no bid: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Total number of none bid items: 10
+
 Enter an item to bid: 10
 Description of no. 10: red two person bicycle
+Reserved Price ($): 400
+Number of bids for item 10: 1
 Current Highest bid: 0 
 
-Enter id number: 2385
-
+Enter your bid ($) (must be higher than previous highest bid): 300
+Does not meet reserved price of item. Please retry.
 Enter your bid ($) (must be higher than previous highest bid): 400
 Current Highest bid: 400
 
-Number of bids for item 10: 1
-
 Bid again? (y/n):n
-
-Items reached reserved price: 10
-
-No bid items: 1, 2, 3, 4, 5, 6, 7, 8, 9
-No. of none bid items: 9
 
 Total items sold: 1
 Items sold: 10
